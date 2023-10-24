@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Principal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large"> </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div style="text-align: center;">
+    <img src="assets/c7833da1311c4655b6fe8499881a0fdb.png">
+  </div>
+
+    <div style="text-align: center;">
+      <p >Bienvenido, {{ username }}</p>
+    </div>
+
+
+  <ion-button routerLink="/noticias" expand="block" color="success" shape="round">
+    Ver noticias del sector
+  </ion-button>
+
+  <ion-row>
+    <ion-col>
+      <ion-button (click)="cerrarSesion()" expand="block" color="danger">Cerrar Sesión</ion-button>
+    </ion-col>
+  </ion-row>
+
+
+</ion-content>

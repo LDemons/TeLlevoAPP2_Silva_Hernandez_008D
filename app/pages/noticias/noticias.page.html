@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Noticias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="success">
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12" size-lg="3" size-md="4" size-sm="6"
+          *ngFor="let unArticulo of articulos; let i=index"> <!--___ of articulos <- el metodo de donde viene, aqui se esta recorriendo la API -->
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>
+              <span class="text-primary">{{i+1}}</span>
+              <span>{{ unArticulo.source.name }}</span> <!-- esa doble llave "{{}}" se llama interpolacion -->
+            </ion-card-subtitle> 
+
+            <ion-card-title>{{ unArticulo.title }}</ion-card-title>
+          </ion-card-header>
+
+          <!-- Controlamos si cada objeto tiene o no imágenes -->
+          <ion-img *ngIf="unArticulo.urlToImage" [src]="unArticulo.urlToImage"></ion-img>
+          
+          <ion-card-content>
+            <p>
+             {{ unArticulo.content}}
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+</ion-content>

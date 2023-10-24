@@ -1,0 +1,47 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "username": "cachupin",
+      "password": "duoc",
+      "role": "usuario",
+      "isactive": true
+    },
+    {
+      "id": 2,
+      "username": "cachupina",
+      "password": "maipu",
+      "role": "usuario",
+      "isactive": true
+    },
+    {
+      "id": 3,
+      "username": "Benjamad",
+      "email": "Benja.mad@gmail.com",
+      "edad": 18,
+      "password": "holamama",
+      "jornada": "diurno",
+      "isactive": true
+    },
+    {
+      "id": 4,
+      "username": "kanserbar",
+      "email": "epic.zimpadres@gmail.com",
+      "edad": 48,
+      "password": "holapapa",
+      "jornada": "vespertino",
+      "isactive": true
+    },
+    {
+      "id": 5,
+      "username": "Bana",
+      "email": "elpapu@gmail.com",
+      "edad": 26,
+      "password": "elsaltodelpapu",
+      "matricula": "MBPE50",
+      "modelo": "Chevrolet",
+      "jornada": "diurno",
+      "isactive": true
+    }
+  ]
+}
